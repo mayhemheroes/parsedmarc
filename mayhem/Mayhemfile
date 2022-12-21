@@ -1,5 +1,5 @@
-project: wikitextparser
-target: fuzz-wtp
+project: parsedmarc
+target: fuzz-parse
 testsuite:
     - file://mayhem/testsuite
 
