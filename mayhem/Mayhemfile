@@ -1,0 +1,9 @@
+project: parsedmarc
+target: fuzz-parse
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_parse_report.py
+    libfuzzer: true
+    timeout: 12
