@@ -1,0 +1,10 @@
+project: parsedmarc
+target: fuzz-parse
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-parse/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_parse_report
+    libfuzzer: true
+    timeout: 12
